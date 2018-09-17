@@ -37,8 +37,6 @@ class Projects extends Component {
 
     projectsDataArray = this.shuffle(projectsDataArray)
 
-    console.log(this.props.projectsData);
-
     for(let i = 0; i < projectsDataArray.length; i++) {
 
       let agencyLink = projectsDataArray[i]["agency-link"];

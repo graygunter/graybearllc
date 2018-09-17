@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ScrollAnimation from 'react-animate-on-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import Projects from './Projects';
