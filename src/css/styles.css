@@ -337,11 +337,8 @@ body .footer {
   }
 }
 @media (max-width: 500px) {
-  body .homeScreen .logo-and-arrow-container .logo {
-    width: 80vw;
-  }
-  body .homeScreen .logo-and-arrow-container .arrow-container {
-    bottom: 1%;
+  body .homeScreen .logo {
+    width: 70vw;
   }
 }
 
