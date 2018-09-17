@@ -1,0 +1,76 @@
+@media (max-width: 1023px) {
+
+  body {
+
+    .homeScreen {
+
+      .projects {
+
+        .project-container {
+
+          width: 50%;
+
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+
+
+@media (max-width: 767px) {
+
+
+  body {
+
+    .homeScreen {
+
+      .projects {
+
+        .project-container {
+
+          padding: 3%;
+          width: 100%;
+
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+@media (max-width: 500px) {
+
+
+  body {
+
+    .homeScreen {
+
+      .logo-and-arrow-container {
+
+        .logo {
+
+          width: 80vw;
+
+        }
+
+        .arrow-container {
+
+          bottom: 1%;
+
+        }
+
+      }
+
+    }
+
+  }
+
+}
