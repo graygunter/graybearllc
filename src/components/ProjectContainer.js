@@ -6,7 +6,9 @@ class Nav extends Component {
   render() {
 
     return (
-      <ScrollAnimation animateIn="fadeIn" animateOnce={true} className="project-container">
+      <ScrollAnimation  animateIn={"fadeIn"} 
+                        animateOnce={true} 
+                        className="project-container">
         <h3>
 
             {this.props.projectLink ? (

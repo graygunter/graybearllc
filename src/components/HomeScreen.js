@@ -10,22 +10,10 @@ class HomeScreen extends Component {
 
       <div className="homeScreen">
 
-        <div className="logo-and-arrow-container">
-
-          <img 
-              alt="Graybear LLC. Since 2011"
-              className="logo"
-              src={require(`../imgs/graybear_logo.svg`)} />
-
-          <div className="arrow-container">
-
-            <FontAwesomeIcon 
-                              icon="arrow-alt-circle-down" 
-                              size="5x"/>
-
-          </div>
-
-        </div>
+        <img 
+            alt="Graybear LLC. Since 2011"
+            className="logo"
+            src={require(`../imgs/graybear_logo.svg`)} />
 
         <Projects projectsData={this.props.projectsData}/>
 
