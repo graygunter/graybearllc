@@ -16,8 +16,8 @@
     "react-scripts": "1.1.5"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "REACT_APP_EMAILJS_RECEIVER=gray.gunter@gmail.com REACT_APP_EMAILJS_TEMPLATEID=graybear_llc REACT_APP_EMAILJS_USERID=graygunter react-scripts start",
+    "build": "REACT_APP_EMAILJS_RECEIVER=gray.gunter@gmail.com REACT_APP_EMAILJS_TEMPLATEID=graybear_llc REACT_APP_EMAILJS_USERID=graygunter react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
