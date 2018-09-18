@@ -1,3 +1,29 @@
+@media (min-width: 1025px) {
+
+  body {
+
+    .homeScreen {
+
+      .projects {
+
+        .project-container {
+
+          &:nth-child(3) {
+
+            opacity: 1 !important;
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
 @media (max-width: 1023px) {
 
   body {
@@ -20,6 +46,31 @@
 
 }
 
+@media (min-width: 768px) {
+
+  body {
+
+    .homeScreen {
+
+      .projects {
+
+        .project-container {
+
+          &:nth-child(2) {
+
+            opacity: 1 !important;
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+}
 
 
 @media (max-width: 767px) {
@@ -55,6 +106,7 @@
 
       .logo {
 
+        height: 60vh;
         width: 70vw;
 
       }
