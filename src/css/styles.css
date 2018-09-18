@@ -239,11 +239,6 @@ body .container header nav button, body .container header nav a {
   margin-right: 2%;
   outline: none;
 }
-body .container header nav button:hover, body .container header nav a:hover {
-  -webkit-animation: "SocialHover" 1s ease infinite;
-  -moz-animation: "SocialHover" 1s ease infinite;
-  animation: "SocialHover" 1s ease infinite;
-}
 body .homeScreen .logo {
   display: block;
   height: 70vh;
@@ -352,23 +347,11 @@ body .footer {
     width: 70vw;
   }
 }
-@media (hover: on-demand) {
+@media (hover: hover) {
   body .container header nav button:hover, body .container header nav a:hover {
-    -o-transition-property: none !important;
-    -moz-transition-property: none !important;
-    -ms-transition-property: none !important;
-    -webkit-transition-property: none !important;
-    transition-property: none !important;
-    -o-transform: none !important;
-    -moz-transform: none !important;
-    -ms-transform: none !important;
-    -webkit-transform: none !important;
-    transform: none !important;
-    -webkit-animation: none !important;
-    -moz-animation: none !important;
-    -o-animation: none !important;
-    -ms-animation: none !important;
-    animation: none !important;
+    -webkit-animation: "SocialHover" 1s ease infinite;
+    -moz-animation: "SocialHover" 1s ease infinite;
+    animation: "SocialHover" 1s ease infinite;
   }
 }
 

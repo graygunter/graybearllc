@@ -12,7 +12,8 @@ class ContactScreen extends Component {
                 scrolling="yes" 
                 seamless="seamless" 
                 src="https://services.cognitoforms.com/f/213mxnhu9EiHnPTd9v0xfA?id=1" 
-                style={{minWidth: 100 + '%', width: 100 + '%'}} 
+                style={{minWidth: 100 + '%', width: 100 + '%'}}
+                title="contact form" 
                 width="100%"></iframe>
         <script src="https://services.cognitoforms.com/scripts/embed.js"></script>
       </div>
