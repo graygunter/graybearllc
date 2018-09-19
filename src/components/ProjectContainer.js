@@ -28,7 +28,7 @@ class Nav extends Component {
                 allowFullScreen
                 frameBorder="0"
                 mozallowfullscreen="true"
-                src={"http://player.vimeo.com/video/" + this.props.vimeoID + "?title=0&amp;byline=0&amp;portrait=0"}
+                src={"https://player.vimeo.com/video/" + this.props.vimeoID + "?title=0&amp;byline=0&amp;portrait=0"}
                 title={this.props.id}
                 webkitallowfullscreen="true"></iframe>
 
