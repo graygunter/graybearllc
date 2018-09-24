@@ -12,6 +12,12 @@ body {
   width: 100wh;
   @include animation('BackgroundGradient', 10s, 'ease', 'infinite');
 
+  .hide {
+
+    display: none;
+
+  }
+
   .container {
 
     margin: 0 auto;
@@ -34,6 +40,14 @@ body {
           cursor: pointer;
           margin-right: 2%;
           outline: none;
+
+        }
+
+        button svg {
+
+          margin-top: -2px;
+          left: 5px;
+          position: relative;
 
         }
 

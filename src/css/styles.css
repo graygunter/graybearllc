@@ -220,6 +220,9 @@ body {
   -moz-animation: "BackgroundGradient" 10s ease infinite;
   animation: "BackgroundGradient" 10s ease infinite;
 }
+body .hide {
+  display: none;
+}
 body .container {
   margin: 0 auto;
   max-width: 1024px;
@@ -238,6 +241,11 @@ body .container header nav button, body .container header nav a {
   cursor: pointer;
   margin-right: 2%;
   outline: none;
+}
+body .container header nav button svg {
+  margin-top: -2px;
+  left: 5px;
+  position: relative;
 }
 body .homeScreen .logo {
   display: block;

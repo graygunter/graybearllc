@@ -7,17 +7,19 @@ class HomeScreen extends Component {
   render() {
     return (
 
-      <div className="homeScreen">
+      <div className={this.props.showHide}>
+        <div className="homeScreen">
 
-        <img 
-            alt="Graybear LLC. Since 2011"
-            className="logo"
-            src={require(`../imgs/graybear_logo.svg`)} />
+          <img 
+              alt="Graybear LLC. Since 2011"
+              className="logo"
+              src={require(`../imgs/graybear_logo.svg`)} />
 
-        <Projects projectsData={this.props.projectsData}/>
+          <Projects projectsData={this.props.projectsData}/>
 
+        </div>
       </div>
-
+      
     );
   }
 }

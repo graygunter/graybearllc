@@ -57,7 +57,10 @@ class App extends Component {
 
         </header>
 
-        {this.state.isHome ? <HomeScreen projectsData={projectsData["projects"]} /> : <ContactScreen />}
+        <HomeScreen showHide={this.state.isHome ? "show" : "hide"}
+                    projectsData={projectsData["projects"]} />
+
+        <ContactScreen showHide={this.state.isHome ? "hide" : "show"} />
 
         <ScrollAnimation 
                           animateIn="fadeIn" 
