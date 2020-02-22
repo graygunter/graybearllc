@@ -14,7 +14,8 @@
     "react": "^16.12.0",
     "react-animate-on-scroll": "^2.1.5",
     "react-dom": "^16.12.0",
-    "react-scripts": "1.1.5"
+    "react-scripts": "1.1.5",
+    "set-value": "^3.0.1"
   },
   "scripts": {
     "start": "REACT_APP_EMAILJS_RECEIVER=gray.gunter@gmail.com REACT_APP_EMAILJS_TEMPLATEID=graybear_llc REACT_APP_EMAILJS_USERID=graygunter react-scripts start",
