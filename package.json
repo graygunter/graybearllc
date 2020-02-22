@@ -18,7 +18,7 @@
     "react": "^16.12.0",
     "react-animate-on-scroll": "^2.1.5",
     "react-dom": "^16.12.0",
-    "react-scripts": "1.1.5",
+    "react-scripts": "^3.4.0",
     "set-value": "^3.0.1"
   },
   "scripts": {
@@ -26,5 +26,17 @@
     "build": "REACT_APP_EMAILJS_RECEIVER=gray.gunter@gmail.com REACT_APP_EMAILJS_TEMPLATEID=graybear_llc REACT_APP_EMAILJS_USERID=graygunter react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
