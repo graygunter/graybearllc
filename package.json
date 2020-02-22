@@ -9,7 +9,7 @@
     "@fortawesome/react-fontawesome": "^0.1.2",
     "classnames": "^2.2.6",
     "i": "^0.3.6",
-    "npm": "^6.4.1",
+    "npm": "^6.13.4",
     "react": "^16.4.2",
     "react-animate-on-scroll": "^2.1.5",
     "react-dom": "^16.4.2",
