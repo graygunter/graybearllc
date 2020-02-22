@@ -1,6 +1,24 @@
 {
   "projects": [
     {
+      "project-name" : "PuppySpot",
+      "vimeo-id" : 393172063,
+      "description" : "Front end web development for the redesign of PuppySpot.com. Summer 2019.",
+      "project-link" : "http://puppyspot.com/"
+    },
+    {
+      "project-name" : "Too Close Trailer",
+      "vimeo-id" : 390564089,
+      "description" : "Video design and editing of the trailer for the mobile video game Too Close from Ludoko Studios. Available now for iOS.",
+      "project-link" : "http://ludoko.com/tooclose/"
+    },
+    {
+      "project-name" : "Outdodge Trailer",
+      "vimeo-id" : 382667616,
+      "description" : "Video design and editing of the trailer for the mobile video game Outdodge from Ludoko Studios. Available now for iOS and Android.",
+      "project-link" : "http://ludoko.com/outdodge/"
+    },
+    {
       "project-name" : "Milkfed Criminal Masterminds",
       "vimeo-id" : 290177729,
       "description" : "The production company of television and comic book writers Kelly Sue DeConnick & Matt Fraction. Milkfed Criminal Masterminds is home to award-winning comic series such as Bitch Planet, Casanova, ODY-C and Pretty Deadly.",
