@@ -151,6 +151,7 @@ table {
   100% {
     opacity: .5; } }
 body {
+  background: linear-gradient(-45deg, #404041, #000);
   background-attachment: fixed;
   background-size: 400% 400%;
   color: #fff;
