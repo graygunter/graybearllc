@@ -16,13 +16,13 @@ class Nav extends Component {
 
       let newSocialIcon = (
 
-        <a  
+        <a
             href={"https://www." + siteName + ".com/" + userName}
             id={siteName}
             key={"socialIcon-" + i}
             target="_blank">
 
-              <FontAwesomeIcon 
+              <FontAwesomeIcon
                                 icon={["fab", siteName]}
                                 size="3x" />
 
@@ -43,9 +43,9 @@ class Nav extends Component {
       <nav>
 
         <button
-                onClick={this.props.buttonPressed}>
-          <FontAwesomeIcon 
-                            icon={this.props.isHome ? "envelope" : "home"} 
+                onClick={this.props.contactPressed}>
+          <FontAwesomeIcon
+                            icon={this.props.isHome ? "envelope" : "home"}
                             size="3x"/>
         </button>
 

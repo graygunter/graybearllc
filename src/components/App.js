@@ -10,6 +10,7 @@ import HomeScreen from './HomeScreen';
 import ContactScreen from './ContactScreen';
 
 import projectsData from '../json/projects.json';
+import uxuiData from '../json/uxui.json';
 
 class App extends Component {
 
@@ -19,17 +20,19 @@ class App extends Component {
 
     super();
 
-    this.buttonPressed = this.buttonPressed.bind(this);
+    this.contactPressed = this.contactPressed.bind(this);
+    this.menuPressed = this.menuPressed.bind(this);
 
     this.state = {
 
       isHome: true,
+      isUXUI: true
 
     }
 
   }
 
-  buttonPressed() {
+  contactPressed() {
 
     if(this.state.isHome) {
 
@@ -44,26 +47,44 @@ class App extends Component {
 
   }
 
+  menuPressed() {
+
+    if(this.state.isUXUI) {
+
+      this.setState({isUXUI: false})
+
+    }
+    else {
+
+      this.setState({isUXUI: true})
+
+    }
+
+  }
+
   render() {
     return (
       <div className="container">
-        
+
         <header>
 
-          <Nav 
-              buttonPressed={this.buttonPressed}
-              className="headerNav" 
+          <Nav
+              className="headerNav"
+              contactPressed={this.contactPressed}
               isHome={this.state.isHome}/>
 
         </header>
 
-        <HomeScreen showHide={this.state.isHome ? "show" : "hide"}
-                    projectsData={projectsData["projects"]} />
+        <HomeScreen
+                    isUXUI={this.state.isUXUI ? true : false}
+                    menuPressed={this.menuPressed}
+                    projectsData={this.state.isUXUI ? uxuiData["uxui"] : projectsData["projects"]}
+                    showHide={this.state.isHome ? "show" : "hide"}/>
 
         <ContactScreen showHide={this.state.isHome ? "hide" : "show"} />
 
-        <ScrollAnimation 
-                          animateIn="fadeIn" 
+        <ScrollAnimation
+                          animateIn="fadeIn"
                           animateOnce={true}
                           className="footer"
                           offset={0}>

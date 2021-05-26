@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
 
-class Nav extends Component {
+class ProjectContainer extends Component {
 
   render() {
 
     return (
-      <ScrollAnimation  animateIn={"fadeIn"} 
-                        animateOnce={true} 
+      <ScrollAnimation  animateIn={"fadeIn"}
+                        animateOnce={true}
                         className="project-container">
         <h3>
 
@@ -24,7 +24,7 @@ class Nav extends Component {
             }
         </h3>
 
-        <iframe 
+        <iframe
                 allowFullScreen
                 frameBorder="0"
                 mozallowfullscreen="true"
@@ -77,4 +77,4 @@ class Nav extends Component {
   }
 }
 
-export default Nav;
+export default ProjectContainer;
