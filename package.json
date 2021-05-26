@@ -9,7 +9,7 @@
     "@fortawesome/react-fontawesome": "^0.1.8",
     "classnames": "^2.2.6",
     "eslint": "^6.8.0",
-    "handlebars": "^4.7.6",
+    "handlebars": "^4.7.7",
     "i": "^0.3.6",
     "lodash.template": "^4.5.0",
     "mem": "^6.0.1",
