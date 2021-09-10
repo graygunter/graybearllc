@@ -11,8 +11,8 @@ class Nav extends Component {
 
     for(let i = 0; i < socialData["social"].length; i++) {
 
-      var siteName = socialData["social"][i]["site"];
-      var userName = socialData["social"][i]["username"];
+      let siteName = socialData["social"][i]["site"];
+      let userName = socialData["social"][i]["username"];
 
       let newSocialIcon = (
 
@@ -20,6 +20,7 @@ class Nav extends Component {
             href={"https://www." + siteName + ".com/" + userName}
             id={siteName}
             key={"socialIcon-" + i}
+            rel="noopener noreferrer"
             target="_blank">
 
               <FontAwesomeIcon

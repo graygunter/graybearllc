@@ -13,11 +13,11 @@ class ProjectContainer extends Component {
 
             {this.props.projectLink ? (
 
-              <a href={this.props.projectLink} target="_blank">{this.props.projectName}</a>
+              <a href={this.props.projectLink} target="_blank" rel="noopener noreferrer">{this.props.projectName}</a>
 
               ) : (
 
-              <a href={"https://vimeo.com/" + this.props.vimeoID} target="_blank">{this.props.projectName}</a>
+              <a href={"https://vimeo.com/" + this.props.vimeoID} target="_blank" rel="noopener noreferrer">{this.props.projectName}</a>
 
               )
 
@@ -38,7 +38,7 @@ class ProjectContainer extends Component {
             this.props.clientLink ? (
 
               <h4>Client:&nbsp;
-                <a href={this.props.clientLink} target="_blank">{this.props.clientName}</a>
+                <a href={this.props.clientLink} target="_blank" rel="noopener noreferrer">{this.props.clientName}</a>
               </h4>
 
             ) : (
@@ -55,7 +55,7 @@ class ProjectContainer extends Component {
             this.props.agencyLink ? (
 
               <h4>Agency:&nbsp;
-                <a href={this.props.agencyLink} target="_blank">
+                <a href={this.props.agencyLink} target="_blank" rel="noopener noreferrer">
                    {this.props.agencyName}
                 </a>
               </h4>

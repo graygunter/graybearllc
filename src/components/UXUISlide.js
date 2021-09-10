@@ -18,6 +18,7 @@ class UXUISlide extends Component {
     return (
         <div className={"slide"}>
             <img
+                  alt={this.props.longDescription}
                   src={require(`../imgs/slides/${this.props.img}`)} />
             <p className="legend">{this.props.longDescription}</p>
             <FontAwesomeIcon
