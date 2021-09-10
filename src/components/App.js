@@ -88,7 +88,7 @@ class App extends Component {
                           animateOnce={true}
                           className="footer"
                           offset={0}>
-            {/* Copyright &copy; Graybear LLC {new Date().getFullYear()} */}
+            Copyright &copy; Graybear LLC {new Date().getFullYear()}
         </ScrollAnimation>
 
       </div>
