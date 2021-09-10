@@ -34,31 +34,13 @@ class App extends Component {
 
   contactPressed() {
 
-    if(this.state.isHome) {
-
-      this.setState({isHome: false})
-
-    }
-    else {
-
-      this.setState({isHome: true})
-
-    }
+    this.state.isHome ? this.setState({isHome: false}) : this.setState({isHome: true});
 
   }
 
   menuPressed() {
 
-    if(this.state.isUXUI) {
-
-      this.setState({isUXUI: false})
-
-    }
-    else {
-
-      this.setState({isUXUI: true})
-
-    }
+    this.state.isUXUI ? this.setState({isUXUI: false}) : this.setState({isUXUI: true});
 
   }
 
