@@ -1,81 +1,66 @@
-@import 'reset';
-@import 'mixins';
+@import "reset";
+@import "mixins";
 
 body {
   background: linear-gradient(-45deg, #404041, #000);
   background-attachment: fixed;
   background-size: 400% 400%;
   color: #fff;
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: "Open Sans Condensed", sans-serif;
   font-weight: 300;
   height: 90vh;
   width: 100wh;
-  @include animation('BackgroundGradient', 10s, 'ease', 'infinite');
+  @include animation("BackgroundGradient", 10s, "ease", "infinite");
 
   .hide {
-
     display: none;
-
   }
 
   .container {
-
     margin: 0 auto;
     max-width: 1024px;
 
     header {
-
       padding: 1% 0 0 0;
 
       nav {
-
         display: flex;
         justify-content: space-between;
         width: 100%;
 
-        button, a {
-
+        button,
+        a {
           background: none;
           border: none;
-          color: #FFF;
+          color: #fff;
           cursor: pointer;
           margin-right: 20%;
           outline: none;
 
-          &:nth-child(4)  {
+          &:nth-child(4) {
             margin-right: 0;
           }
-
         }
 
         button svg {
-
           margin-top: -2px;
           left: 5px;
           position: relative;
-
         }
-
       }
-
     }
-
   }
 
   .homeScreen {
-
     .logo {
-
       display: block;
       height: 70vh;
       margin: 0 auto;
       width: auto;
-
     }
 
     .menu {
-
-      border-bottom: 1px solid #FFF;
+      border-bottom: 1px solid #fff;
       display: flex;
       width: 100%;
 
@@ -84,7 +69,7 @@ body {
         border: 1px solid white;
         border-bottom: 0em;
         border-radius: 5px 5px 0 0;
-        color: #FFF;
+        color: #fff;
         font-size: 1.5rem;
         margin: 0 5px -1px 0;
         outline: none;
@@ -93,9 +78,9 @@ body {
 
         &.active {
           background: #1a73e8;
-          border-bottom: 1px solid #FFF;
+          border-bottom: 1px solid #fff;
           border-style: solid;
-          color: #FFF;
+          color: #fff;
           cursor: pointer;
           font-weight: 700;
         }
@@ -103,12 +88,10 @@ body {
     }
 
     .projects {
-
       display: flex;
       flex-wrap: wrap;
 
       .project-container {
-
         box-sizing: border-box;
         cursor: pointer;
         font-size: 1rem;
@@ -118,30 +101,25 @@ body {
         width: 33.333%;
 
         &:nth-child(1) {
-
           opacity: 1 !important;
-
         }
 
         iframe {
-
           background-color: #000;
           box-sizing: border-box;
           display: block;
           margin: 5% 0;
           padding: 5% 0;
           width: 100%;
-
         }
 
         h3 {
-
           color: #1a73e8;
           font-weight: 700;
-
         }
 
-        a, a:visited {
+        a,
+        a:visited {
           color: #1a73e8;
           text-decoration: none;
         }
@@ -149,31 +127,26 @@ body {
         img {
           width: 100%;
         }
-
       }
 
       .slideshow-container {
-
         position: relative;
 
         .carouselWrapper {
-          background: rgba(0,0,0,0.75);
+          background: rgba(0, 0, 0, 0.75);
           position: fixed;
           top: 0;
           left: 0;
           height: 100%;
 
           .carousel {
-
             margin: 10% auto 0;
             width: 70% !important;
 
             .carousel-status {
-
               left: 0;
               padding: 10px;
               right: auto;
-
             }
 
             svg {
@@ -186,7 +159,6 @@ body {
             }
 
             .control-dots {
-
               .dot {
                 background: #1a73e8;
               }
@@ -200,35 +172,29 @@ body {
             .slide .legend {
               opacity: 1;
             }
-
           }
         }
       }
-
     }
-
   }
 
   .contactScreen {
-
     h1 {
-
       font-size: 2rem;
       margin-bottom: 5%;
       text-align: center;
-
     }
 
     form {
-
       margin: 0 auto;
       width: 300px;
 
-      input, textarea {
+      input,
+      textarea {
         box-sizing: border-box;
         border: none;
         display: block;
-        font-family: 'Quicksand', sans-serif;
+        font-family: "Quicksand", sans-serif;
         font-size: 20px;
         margin-bottom: 10px;
         outline: none;
@@ -237,42 +203,31 @@ body {
       }
 
       textarea {
-
         height: 200px;
         resize: none;
-
       }
 
       input[type="submit"] {
-
         @include border-radius(4px);
         background-color: #1a73e8;
-        color: #FFF !important;
+        color: #fff !important;
         cursor: pointer;
         font-weight: 700;
         padding: 4% 0;
         text-transform: uppercase;
 
         &:hover {
-
-          @include animation('SendButtonHover', 1s, 'ease', 1);
-
+          @include animation("SendButtonHover", 1s, "ease", 1);
         }
-
       }
-
     }
-
   }
 
   .footer {
-
     font-size: 1rem;
     padding: 5% 0;
-    text-align: center
-
+    text-align: center;
   }
-
 }
 
-@import 'responsive';
+@import "responsive";

@@ -7,40 +7,35 @@
 }
 
 @mixin BackgroundGradientAnimation() {
-
   0% {
-    background-position: 0% 50%
+    background-position: 0% 50%;
   }
   50% {
-    background-position: 100% 50%
+    background-position: 100% 50%;
   }
   100% {
-    background-position: 0% 50%
+    background-position: 0% 50%;
   }
-
 }
 
 @mixin SocialHoverAnimation() {
-
   0% {
-    color: #FFF;
+    color: #fff;
     @include scale(1, 1);
   }
 
   50% {
-    color: #FF0000;
+    color: #ff0000;
     @include scale(1.1, 1.1);
   }
 
   100% {
-    color: #FFF;
+    color: #fff;
     @include scale(1, 1);
   }
-
 }
 
 @mixin SendButtonHoverAnimation() {
-
   0% {
     @include scale(1, 1);
   }
@@ -52,13 +47,11 @@
   100% {
     @include scale(1, 1);
   }
-
 }
 
 @mixin ArrowPulseAnimation() {
-
   0% {
-    opacity: .5;
+    opacity: 0.5;
   }
 
   50% {
@@ -66,7 +59,6 @@
   }
 
   100% {
-    opacity: .5;
+    opacity: 0.5;
   }
-
 }

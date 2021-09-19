@@ -1,149 +1,80 @@
 @media (min-width: 1025px) {
-
   body {
-
     .homeScreen {
-
       .projects {
-
         .project-container {
-
           &:nth-child(3) {
-
             opacity: 1 !important;
-
           }
-
         }
-
       }
-
     }
-
   }
-
 }
 
 @media (max-width: 1023px) {
-
   body {
-
     .homeScreen {
-
       .projects {
-
         .project-container {
-
           width: 50%;
-
         }
-
       }
-
     }
-
   }
-
 }
 
 @media (min-width: 768px) {
-
   body {
-
     .homeScreen {
-
       .projects {
-
         .project-container {
-
           &:nth-child(2) {
-
             opacity: 1 !important;
-
           }
-
         }
-
       }
-
     }
-
   }
-
 }
 
-
 @media (max-width: 767px) {
-
-
   body {
-
     .homeScreen {
-
       .projects {
-
         .project-container {
-
           padding: 3%;
           width: 100%;
-
         }
-
       }
-
     }
-
   }
-
 }
 
 @media (max-width: 500px) {
-
-
   body {
-
     .homeScreen {
-
       .logo {
-
         height: 60vh;
         width: 70vw;
-
       }
-
     }
-
   }
-
 }
 
-
-@media (hover:hover) {
-
+@media (hover: hover) {
   body {
-
     .container {
-
       header {
-
         nav {
-
-          button, a {
-
+          button,
+          a {
             &:hover {
-
-              @include animation('SocialHover', 1s, 'ease', 1);
-
+              @include animation("SocialHover", 1s, "ease", 1);
             }
-
           }
-
         }
-
       }
-
     }
-
   }
-
 }
