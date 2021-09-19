@@ -21,7 +21,7 @@
     "react-responsive-carousel": "^3.2.10",
     "react-scripts": "^3.4.3",
     "react-slideshow-image": "^3.3.0",
-    "set-value": "^3.0.1"
+    "set-value": "^4.0.1"
   },
   "scripts": {
     "start": "REACT_APP_EMAILJS_RECEIVER=gray.gunter@gmail.com REACT_APP_EMAILJS_TEMPLATEID=graybear_llc REACT_APP_EMAILJS_USERID=graygunter react-scripts start",
