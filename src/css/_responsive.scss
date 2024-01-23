@@ -41,22 +41,16 @@
 @media (max-width: 767px) {
   body {
     .homeScreen {
+
+      .logo {
+        width: 90%;
+      }
+
       .projects {
         .project-container {
           padding: 3%;
           width: 100%;
         }
-      }
-    }
-  }
-}
-
-@media (max-width: 500px) {
-  body {
-    .homeScreen {
-      .logo {
-        height: 60vh;
-        width: 70vw;
       }
     }
   }

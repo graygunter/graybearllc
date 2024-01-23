@@ -347,9 +347,9 @@ body .container header nav button svg {
 }
 body .homeScreen .logo {
   display: block;
-  height: 70vh;
-  margin: 0 auto;
-  width: auto;
+  height: auto;
+  margin: 30px auto;
+  width: 100%;
 }
 body .homeScreen .menu {
   border-bottom: 1px solid #fff;
@@ -513,15 +513,12 @@ body .footer {
   }
 }
 @media (max-width: 767px) {
+  body .homeScreen .logo {
+    width: 90%;
+  }
   body .homeScreen .projects .project-container {
     padding: 3%;
     width: 100%;
-  }
-}
-@media (max-width: 500px) {
-  body .homeScreen .logo {
-    height: 60vh;
-    width: 70vw;
   }
 }
 @media (hover: hover) {
