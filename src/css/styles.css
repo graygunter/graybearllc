@@ -319,7 +319,7 @@ body .container {
   max-width: 1024px;
 }
 body .container header {
-  padding: 1% 0 0 0;
+  padding: 3% 0 0 0;
 }
 body .container header nav {
   display: flex;
