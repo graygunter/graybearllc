@@ -3,30 +3,45 @@
     {
       "project-name" : "PuppySpot",
       "vimeo-id" : 393172063,
+      "client-name" : "Puppy Spot",
+      "client-link" : "https://www.puppyspot.com/",
+      "role" : "Development",
       "description" : "Front end web development for the redesign of PuppySpot.com. Summer 2019.",
       "project-link" : "http://puppyspot.com/"
     },
     {
       "project-name" : "Too Close Trailer",
       "vimeo-id" : 390564089,
+      "client-name" : "Ludoko",
+      "client-link" : "http://ludoko.com/site/",
+      "role" : "Video Editing",
       "description" : "Video design and editing of the trailer for the mobile video game Too Close from Ludoko Studios. Available now for iOS.",
       "project-link" : "http://ludoko.com/tooclose/"
     },
     {
       "project-name" : "Outdodge Trailer",
       "vimeo-id" : 382667616,
+      "client-name" : "Ludoko",
+      "client-link" : "http://ludoko.com/site/",
+      "role" : "Video Editing",
       "description" : "Video design and editing of the trailer for the mobile video game Outdodge from Ludoko Studios. Available now for iOS and Android.",
       "project-link" : "http://ludoko.com/outdodge/"
     },
     {
       "project-name" : "Milkfed Criminal Masterminds",
       "vimeo-id" : 290177729,
+      "client-name" : "Milkfed Criminal Masterminds",
+      "client-link" : "https://milkfed.us/",
+      "role" : "Development & Design",
       "description" : "The production company of television and comic book writers Kelly Sue DeConnick & Matt Fraction. Milkfed Criminal Masterminds is home to award-winning comic series such as Bitch Planet, Casanova, ODY-C and Pretty Deadly.",
       "project-link" : "https://milkfed.us/"
     },
     {
       "project-name" : "Taft Design + Associates",
       "vimeo-id" : 290177115,
+      "client-name" : "Taft Design + Associates",
+      "client-link" : "https://www.taftdesign.com/",
+      "role" : "Development",
       "description" : "Taft Design + Associates is a specialty international design studio Headquartered in Pasadena, California. They provide exhibit architecture and graphic design for resorts and museums. Clients include: Disney, Universal Studios and the American Film Institute.",
       "project-link" : "https://www.taftdesign.com/"
     },
@@ -38,7 +53,7 @@
     {
       "project-name" : "2015 Mixtape",
       "vimeo-id" : 150451549,
-      "description" : "Projects from the year 2015 in web design and development. Featured projects for USA Network, Adult Mills, Penguin Randomhouse and Balboa Park featuring the song \"Half Bad\" by White Reaper."
+      "description" : "Projects from the year 2015 in web design and development. Featured projects for USA Network, Adluh Mills, Penguin Randomhouse and Balboa Park featuring the song \"Half Bad\" by White Reaper."
     },
     {
       "project-name" : "DIG Decoded",
@@ -47,6 +62,7 @@
       "client-link" : "http://www.usanetwork.com/",
       "agency-name" : "42 Entertainment",
       "agency-link" : "http://www.42entertainment.com/",
+      "role" : "Development",
       "description" : "A weekly series of online puzzle games for the 10-episode television event from USA network. As players solved each week’s puzzle additional video content expanding the world of DIG was unlocked.",
       "project-link" : "http://www.42entertainment.com/work/digdecoded"
     },
@@ -57,6 +73,7 @@
       "client-link" : "http://www.balboapark.org/",
       "agency-name" : "UX Curious",
       "agency-link" : "http://uxcurious.com/",
+      "role" : "Design",
       "description" : "Online ticket purchasing system for visitors to Balboa Park in San Diego, California. Guests cam compare a variety of single and multi-day passes, calculate total cost for their visit and pay online.",
       "project-link" : "https://explorer.balboapark.org/?fromBP#"
     },
@@ -67,6 +84,7 @@
       "client-link" : "http://www.penguinrandomhouse.com/",
       "agency-name" : "42 Entertainment",
       "agency-link" : "http://www.42entertainment.com/",
+      "role" : "Development",
       "description" : "The main site for the children’s science fiction book series Voyagers from Penguin Randomhouse. Introduction to the story and the world of Voyagers as well as links to purchase books in the series on multiple online platforms.",
       "project-link" : "https://www.voyagershq.com/"
     },
@@ -82,6 +100,7 @@
       "client-link" : "http://paramount.com/",
       "agency-name" : "42 Entertainment",
       "agency-link" : "http://www.42entertainment.com/",
+      "role" : "Development",
       "description" : "Responsive web development for the marketing of the major motion picture Transformers 4: Age of Extinction for Sony Pictures. Users could view stills from the film, watch trailers, download digital posters and link to other online content.",
       "project-link" : "http://www.42entertainment.com/work/transformers"
     },
@@ -92,6 +111,7 @@
       "client-link" : "http://suckerpunch.playstation.com/",
       "agency-name" : "42 Entertainment",
       "agency-link" : "http://www.42entertainment.com/",
+      "role" : "Development",
       "description" : "A series of online mini-games released on a weekly basis to accompany players of the video game inFAMOUS 2: Second Son. As players followed both the story of inFAMOUS 2: Paper Trail a new in-game mystery unfolded.",
       "project-link" : "https://infamouspapertrail.com/"
     },
@@ -102,6 +122,7 @@
       "client-link" : "http://cnn.com/",
       "agency-name" : "Not That, This",
       "agency-link" : "https://www.linkedin.com/company/not-that-this-llc",
+      "role" : "Development",
       "description" : "User experience and interface concept design work specifically for the news network’s website on iPad. USer’s were given the ability to jump between a live feed of the network and a library of content from the network’s various shows."
     },
     {
@@ -111,6 +132,7 @@
       "client-link" : "https://abc.go.com/",
       "agency-name" : "Not That, This",
       "agency-link" : "https://www.linkedin.com/company/not-that-this-llc",
+      "role" : "Development",
       "description" : "User interface and experience concept visualizations and animations for the redesign and relaunch of ABC Family and ABC.com."
     },
     {
@@ -121,6 +143,7 @@
       "agency-name" : "42 Entertainment",
       "agency-link" : "http://www.42entertainment.com/",
       "description" : "Development of kiosk based interactive games for Spongebob Squarepant's \"Great Spatula Caper\", a part of Nickelodeon's Universe of Adventure at the Mall of America in Minnesota.",
+      "role" : "Development",
       "project-link" : "http://moa.adventureuniverseclub.com/"
     },
     {
@@ -130,6 +153,7 @@
       "client-link" : "http://www.treasurer.sc.gov/",
       "agency-name" : "Mad Monkey",
       "agency-link" : "https://www.gomadmonkey.com/",
+      "role" : "Development",
       "description" : "Redesigned site for the treasurer of the State of South Carolina. Built to display appropriately on desktop computers, tablet computers and mobile smart phones.",
       "project-link" : "http://www.treasurer.sc.gov/"
     },
@@ -145,6 +169,7 @@
       "client-link" : "http://www.sonypictures.com/",
       "agency-name" : "42 Entertainment",
       "agency-link" : "http://www.42entertainment.com/",
+      "role" : "Development",
       "description" : "Viral sites for Sony Picture's The Amazing Spider-Man: Mark of the Spider-Man, Webbed Menace, Parker's POV and Oscorp Industries. Users participated in geo-location scavenger hunts, photo uploading contests, picture puzzle solving and games.",
       "project-link" : "http://www.42entertainment.com/work/markofthespiderman"
     },
@@ -155,6 +180,7 @@
       "client-link" : "http://www.ford.com/",
       "agency-name" : "42 Entertainment",
       "agency-link" : "http://www.42entertainment.com/",
+      "role" : "Development",
       "description" : "Random Acts of Fusion was the hub of a TV & social media campaign showcasing cross country live events including: NASCAR, Fashion's Night Out, Bite of Seattle and more. Costarring Ryan Seacrest, Joel McHale and Kate Micucci.",
       "project-link" : "http://www.42entertainment.com/work/randomactsoffusion"
     },
@@ -163,12 +189,14 @@
       "vimeo-id" : 57408498,
       "client-name" : "Mobi Munch",
       "client-link" : "http://www.mobimunch.com/",
+      "role" : "Development & Design",
       "description" : "Designed and developed a fully responsive website (desktop / tablet / mobile) for the Latin American food truck chain serving 7 locations from Baylor University to the University of Florida."
     },
     {
       "project-name" : "Defenders of Speed",
       "vimeo-id" : 57412972,
       "client-name" : "Defenders of Speed",
+      "role" : "Development & Design",
       "description" : "E-commerce site for the Mini Cooper performance parts company. Design and development for the site including a fully responsive build allowing online purchases from desktop, tablet and mobile devices."
     },
     {
@@ -176,6 +204,7 @@
       "vimeo-id" : 57411337,
       "client-name" : "Mobi Munch",
       "client-link" : "http://www.mobimunch.com/",
+      "role" : "Development & Design",
       "description" : "Designed and built a fully responsive website (desktop / tablet / mobile) for the anime-themed rice bowl food truck Fán Boy. They have an entree called Dragon Bowl Z. Do you need to know anything else?"
     },
     {
@@ -190,6 +219,7 @@
       "client-link" : "http://www.sonypictures.com/",
       "agency-name" : "42 Entertainment",
       "agency-link" : "http://www.42entertainment.com/",
+      "role" : "Development",
       "description" : "Mouth Taped Shut was a site teasing exclusive behind the scenes images from the set of the film Girl with the Dragon Tattoo to promote the film and its soundtrack prerelease serving as a social media hub for discussion of the movie.",
       "project-link" : "http://www.42entertainment.com/work/mouthtapedshut"
     },
@@ -200,6 +230,7 @@
       "client-link" : "http://www.wrigley.com/global/index.aspx",
       "agency-name" : "42 Entertainment",
       "agency-link" : "http://www.42entertainment.com/",
+      "role" : "Development",
       "description" : "Online puzzle game and nationwide alternate reality scavenger hunt. The site was promoted through TV commercials, a live event at Bonnaroo and QR codes on 40 million packs of gum.",
       "project-link" : "http://www.42entertainment.com/work/humanpreservationproject"
     },
@@ -210,6 +241,7 @@
       "client-link" : "http://www.dreamworksstudios.com/",
       "agency-name" : "42 Entertainment",
       "agency-link" : "http://www.42entertainment.com/",
+      "role" : "Development",
       "description" : "Website for the fictitious World Robot Boxing for the film Real Steel from Dreamworks. Content added weekly expanding from a history of robot boxing, to exploring a robot, to designing a custom robot boxer to train and fight online."
     }
   ]

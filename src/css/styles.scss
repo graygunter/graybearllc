@@ -74,7 +74,7 @@ body {
         margin: 0 5px -1px 0;
         outline: none;
         padding: 5px 10px;
-        width: 20%;
+        width: 40%;
 
         &.active {
           background: #1a73e8;
@@ -116,6 +116,12 @@ body {
         h3 {
           color: #1a73e8;
           font-weight: 700;
+        }
+
+        h4 {
+          span {
+            font-weight: 600;
+          }
         }
 
         a,

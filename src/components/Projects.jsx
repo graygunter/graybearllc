@@ -54,6 +54,8 @@ class Projects extends Component {
       let projectLink = projectsDataArray[i]["project-link"];
       let projectName = projectsDataArray[i]["project-name"];
 
+      let role = projectsDataArray[i]["role"];
+
       let vimeoID = projectsDataArray[i]["vimeo-id"];
 
       let newProject = (
@@ -67,6 +69,7 @@ class Projects extends Component {
           key={"project-container" + i}
           projectLink={projectLink}
           projectName={projectName}
+          role={role}
           vimeoID={vimeoID}
         />
       );

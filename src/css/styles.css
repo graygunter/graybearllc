@@ -366,7 +366,7 @@ body .homeScreen .menu div {
   margin: 0 5px -1px 0;
   outline: none;
   padding: 5px 10px;
-  width: 20%;
+  width: 40%;
 }
 body .homeScreen .menu div.active {
   background: #1a73e8;
@@ -403,6 +403,9 @@ body .homeScreen .projects .project-container iframe {
 body .homeScreen .projects .project-container h3 {
   color: #1a73e8;
   font-weight: 700;
+}
+body .homeScreen .projects .project-container h4 span {
+  font-weight: 600;
 }
 body .homeScreen .projects .project-container a,
 body .homeScreen .projects .project-container a:visited {

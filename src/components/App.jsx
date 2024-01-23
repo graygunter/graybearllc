@@ -38,7 +38,7 @@ class App extends Component {
 
     this.state = {
       isHome: true,
-      isUXUI: true,
+      isUXUI: false,
     };
   }
 

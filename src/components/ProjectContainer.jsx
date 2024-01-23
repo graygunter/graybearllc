@@ -45,7 +45,7 @@ class ProjectContainer extends Component {
         {this.props.clientName ? (
           this.props.clientLink ? (
             <h4>
-              Client:&nbsp;
+              <span>Client </span>:&nbsp;
               <a
                 href={this.props.clientLink}
                 target="_blank"
@@ -55,13 +55,13 @@ class ProjectContainer extends Component {
               </a>
             </h4>
           ) : (
-            <h4>Client:&nbsp;{this.props.clientName}</h4>
+            <h4><span>Client </span>:&nbsp;{this.props.clientName}</h4>
           )
         ) : null}
         {this.props.agencyName ? (
           this.props.agencyLink ? (
             <h4>
-              Agency:&nbsp;
+              <span>Agency </span>:&nbsp;
               <a
                 href={this.props.agencyLink}
                 target="_blank"
@@ -71,8 +71,15 @@ class ProjectContainer extends Component {
               </a>
             </h4>
           ) : (
-            <h4>Agency:&nbsp;{this.props.agencyName}</h4>
+            <h4>Agency :&nbsp;{this.props.agencyName}</h4>
           )
+        ) : null}
+
+        {this.props.role ? (
+          <h4>
+            <span>Role </span>:&nbsp;
+            {this.props.role}
+          </h4>
         ) : null}
 
         <p>{this.props.description}</p>
