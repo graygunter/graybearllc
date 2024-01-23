@@ -2,7 +2,8 @@
 @import "mixins";
 
 body {
-  background: linear-gradient(-45deg, #404041, #000);
+  /*background: linear-gradient(-45deg, #404041, #000);*/
+  background: #000;
   background-attachment: fixed;
   background-size: 400% 400%;
   color: #fff;
@@ -10,7 +11,7 @@ body {
   font-weight: 300;
   height: 90vh;
   width: 100wh;
-  @include animation("BackgroundGradient", 10s, "ease", "infinite");
+  /*@include animation("BackgroundGradient", 10s, "ease", "infinite");*/
 
   .hide {
     display: none;
