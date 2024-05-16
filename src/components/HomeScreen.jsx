@@ -15,12 +15,16 @@ class HomeScreen extends Component {
           />
 
           <Menu
+            isDevDesign={this.props.isDevDesign}
             isUXUI={this.props.isUXUI}
+            isArt={this.props.isArt}
             menuPressed={this.props.menuPressed}
           />
 
           <Projects
+            isDevDesign={this.props.isDevDesign}
             isUXUI={this.props.isUXUI}
+            isArt={this.props.isArt}
             projectsData={this.props.projectsData}
           />
         </div>

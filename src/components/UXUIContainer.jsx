@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 
+const folder = "uxui";
+
 class UXUIContainer extends Component {
   render() {
     return (
@@ -22,7 +24,7 @@ class UXUIContainer extends Component {
           <img
             alt={this.props.altText}
             className={"thumbnail"}
-            src={require(`../imgs/thumbnails/${this.props.thumbnail}`)}
+            src={require(`../imgs/thumbnails/${folder}/${this.props.thumbnail}`)}
           />
 
           <p>{this.props.briefDescription}</p>

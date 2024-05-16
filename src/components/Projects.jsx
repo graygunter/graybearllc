@@ -1,19 +1,21 @@
 import React, { Component } from "react";
-import ProjectContainer from "./ProjectContainer";
+import DevDesignContainer from "./DevDesignContainer";
 import UXUIContainer from "./UXUIContainer";
-import UXUISlide from "./UXUISlide";
+import ProjectSlide from "./ProjectSlide";
+import ArtContainer from "./ArtContainer";
 
-var Carousel = require("react-responsive-carousel").Carousel;
+let Carousel = require("react-responsive-carousel").Carousel;
 
 class Projects extends Component {
   constructor() {
     super();
 
     this.generateProjects = this.generateProjects.bind(this);
-    this.generateSlideShow = this.generateSlideShow.bind(this);
+    this.generateDevDesignProjects = this.generateDevDesignProjects.bind(this);
     this.generateUXUIProjects = this.generateUXUIProjects.bind(this);
-    this.generateWebDevProjects = this.generateWebDevProjects.bind(this);
+    this.generateArtProjects = this.generateArtProjects.bind(this);
     this.shuffle = this.shuffle.bind(this);
+    this.generateSlideShow = this.generateSlideShow.bind(this);
     this.slideShowClicked = this.slideShowClicked.bind(this);
     this.slideShowClosed = this.slideShowClosed.bind(this);
 
@@ -25,7 +27,7 @@ class Projects extends Component {
   }
 
   shuffle(array) {
-    var currentIndex = array.length,
+    let currentIndex = array.length,
       temporaryValue,
       randomIndex;
 
@@ -41,7 +43,7 @@ class Projects extends Component {
     return array;
   }
 
-  generateWebDevProjects(projects, projectsDataArray) {
+  generateDevDesignProjects(projects, projectsDataArray) {
     for (let i = 0; i < projectsDataArray.length; i++) {
       let agencyLink = projectsDataArray[i]["agency-link"];
       let agencyName = projectsDataArray[i]["agency-name"];
@@ -51,22 +53,22 @@ class Projects extends Component {
 
       let description = projectsDataArray[i]["description"];
 
-      let projectLink = projectsDataArray[i]["project-link"];
-      let projectName = projectsDataArray[i]["project-name"];
+      let projectLink = projectsDataArray[i]["link"];
+      let projectName = projectsDataArray[i]["name"];
 
       let role = projectsDataArray[i]["role"];
 
       let vimeoID = projectsDataArray[i]["vimeo-id"];
 
       let newProject = (
-        <ProjectContainer
+        <DevDesignContainer
           agencyLink={agencyLink}
           agencyName={agencyName}
           clientLink={clientLink}
           clientName={clientName}
           description={description}
           id={i}
-          key={"project-container" + i}
+          key={"container" + i}
           projectLink={projectLink}
           projectName={projectName}
           role={role}
@@ -97,8 +99,10 @@ class Projects extends Component {
 
     for (let i = 0; i < slideNames.length; i++) {
       let newSlide = (
-        <UXUISlide
+        <ProjectSlide
           img={slideNames[i]}
+          isUXUI={this.props.isUXUI}
+          isArt={this.props.isArt}
           key={"slide" + i}
           longDescription={this.state.slideLongDescription}
           slideShowClosed={this.slideShowClosed}
@@ -130,7 +134,7 @@ class Projects extends Component {
       let uxuiBriefDescription = projectsDataArray[i]["briefDescription"];
       let uxuiLongDescription = projectsDataArray[i]["longDescription"];
       let uxuiName = projectsDataArray[i]["name"];
-      let uxuiSlides = projectsDataArray[i]["slides"];
+      let projectSlides = projectsDataArray[i]["slides"];
       let uxuiThumbnail = projectsDataArray[i]["thumbnail"];
 
       let newProject = (
@@ -141,7 +145,36 @@ class Projects extends Component {
           key={"uxui-container" + i}
           longDescription={uxuiLongDescription}
           name={uxuiName}
-          slides={uxuiSlides}
+          slides={projectSlides}
+          slideShowClicked={this.slideShowClicked}
+          thumbnail={uxuiThumbnail}
+        />
+      );
+
+      projects.push(newProject);
+    }
+
+    return projects;
+  }
+
+  generateArtProjects(projects, projectsDataArray) {
+    for (let i = 0; i < projectsDataArray.length; i++) {
+      let uxuiAltText = projectsDataArray[i]["altText"];
+      let uxuiBriefDescription = projectsDataArray[i]["briefDescription"];
+      let uxuiLongDescription = projectsDataArray[i]["longDescription"];
+      let uxuiName = projectsDataArray[i]["name"];
+      let projectSlides = projectsDataArray[i]["slides"];
+      let uxuiThumbnail = projectsDataArray[i]["thumbnail"];
+
+      let newProject = (
+        <ArtContainer
+          altText={uxuiAltText}
+          briefDescription={uxuiBriefDescription}
+          id={i}
+          key={"uxui-container" + i}
+          longDescription={uxuiLongDescription}
+          name={uxuiName}
+          slides={projectSlides}
           slideShowClicked={this.slideShowClicked}
           thumbnail={uxuiThumbnail}
         />
@@ -154,17 +187,21 @@ class Projects extends Component {
   }
 
   generateProjects() {
-    var projects = [];
 
-    var projectsDataArray = this.props.projectsData;
+    let projects = [];
 
-    if (!this.props.isUXUI) projectsDataArray = this.shuffle(projectsDataArray);
+    let projectsDataArray = this.props.projectsData;
 
-    if (this.props.isUXUI) {
-      this.generateUXUIProjects(projects, projectsDataArray);
-    } else {
-      this.generateWebDevProjects(projects, projectsDataArray);
+    if (this.props.isDevDesign) {
+      projectsDataArray = this.shuffle(projectsDataArray);
+      this.generateDevDesignProjects(projects, projectsDataArray);
     }
+
+    if (this.props.isUXUI)
+      this.generateUXUIProjects(projects, projectsDataArray);
+
+    if (this.props.isArt)
+      this.generateArtProjects(projects, projectsDataArray);    
 
     return projects;
   }

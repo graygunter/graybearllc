@@ -1,0 +1,20 @@
+{
+  "art": [
+    {
+      "name": "Better Call Saul",
+      "thumbnail": "Better_Call_Saul.jpg",
+      "slides": ["Better_Call_Saul.jpg"],
+      "altText": "Color concept poster for the television show Better Caul Saul.",
+      "briefDescription": "Poster for the TV series Better Caul Saul",
+      "longDescription": "Matchbook of the show’s title character’s original name and law firm burning to symbolize his old life ending. The background is the symbol of the flag of New Mexico (the location of the series) overlaid on an abstraction of indigenous Pueblo pottery."
+    },
+    {
+      "name": "Better Call Saul",
+      "thumbnail": "Better_Call_Saul.jpg",
+      "slides": ["Better_Call_Saul.jpg"],
+      "altText": "Color concept poster for the television show Better Caul Saul.",
+      "briefDescription": "Poster for the TV series Better Caul Saul",
+      "longDescription": "Matchbook of the show’s title character’s original name and law firm burning to symbolize his old life ending. The background is the symbol of the flag of New Mexico (the location of the series) overlaid on an abstraction of indigenous Pueblo pottery."
+    }
+  ]
+}

@@ -14,18 +14,37 @@
 
 @media (max-width: 1023px) {
   body {
-    .homeScreen {
-      .projects {
-        .project-container {
-          width: 50%;
+
+    .container {
+
+      header {
+        padding-left: 4%;
+        padding-right: 4%;
+      }
+
+      .homeScreen {
+
+        .logo {
+          width: 90%;
+        }
+
+        .projects {
+          border: none;
+          padding: 0 3%;
+          .project-container {
+            width: 50%;
+          }
         }
       }
+
     }
+
   }
 }
 
 @media (min-width: 768px) {
   body {
+
     .homeScreen {
       .projects {
         .project-container {
@@ -35,23 +54,25 @@
         }
       }
     }
+
   }
 }
 
 @media (max-width: 767px) {
   body {
-    .homeScreen {
 
-      .logo {
-        width: 90%;
-      }
+    .container {
 
-      .projects {
-        .project-container {
-          padding: 3%;
-          width: 100%;
+      .homeScreen {
+
+        .projects {
+          .project-container {
+            padding: 3%;
+            width: 100%;
+          }
         }
       }
+
     }
   }
 }

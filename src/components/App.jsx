@@ -17,8 +17,9 @@ import Nav from "./Nav";
 import HomeScreen from "./HomeScreen";
 import ContactScreen from "./ContactScreen";
 
-import projectsData from "../json/projects.json";
+import devdesignData from "../json/devdesign.json";
 import uxuiData from "../json/uxui.json";
+import artData from "../json/art.json";
 
 class App extends Component {
   constructor() {
@@ -38,7 +39,9 @@ class App extends Component {
 
     this.state = {
       isHome: true,
-      isUXUI: false,
+      isDevDesign: false,
+      isUXUI: true,
+      isArt: false
     };
   }
 
@@ -48,10 +51,28 @@ class App extends Component {
       : this.setState({ isHome: true });
   }
 
-  menuPressed() {
-    this.state.isUXUI
-      ? this.setState({ isUXUI: false })
-      : this.setState({ isUXUI: true });
+
+  menuPressed(event) {
+
+    this.setState({
+      isDevDesign: false, 
+      isUXUI: false, 
+      isArt: false});
+
+    let menuTitle = event.currentTarget.getAttribute("menu-title");
+
+    menuTitle === "DevDesign" 
+      ? this.setState({
+        isDevDesign: true}) 
+      : 
+    menuTitle === "UXUI" 
+      ? this.setState({
+        isUXUI: true})
+      :
+    menuTitle === "Art" 
+      ? this.setState({
+        isArt: true})
+      : console.log();
   }
 
   render() {
@@ -66,10 +87,15 @@ class App extends Component {
         </header>
 
         <HomeScreen
+          isDevDesign={!!this.state.isDevDesign}
           isUXUI={!!this.state.isUXUI}
+          isArt={!!this.state.isArt}
           menuPressed={this.menuPressed}
           projectsData={
-            this.state.isUXUI ? uxuiData.uxui : projectsData.projects
+            this.state.isDevDesign ? devdesignData.devdesign :
+            this.state.isUXUI ? uxuiData.uxui :
+            this.state.isArt ? artData.art :
+            null
           }
           showHide={this.state.isHome ? "show" : "hide"}
         />

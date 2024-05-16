@@ -11,17 +11,27 @@ class Menu extends Component {
     return (
       <div className={"menu"}>
         <div
-          className={this.props.isUXUI ? "active" : "inactive"}
-          onClick={this.props.isUXUI ? this.props.menuPressed : null}
+          className={this.props.isDevDesign ? "inactive" : "active"}
+          menu-title="DevDesign"
+          onClick={this.props.isDevDesign ? null : this.props.menuPressed}
         >
-          Web Dev &amp; Design
+          Dev &amp; Design
         </div>
         <div
           className={this.props.isUXUI ? "inactive" : "active"}
+          menu-title="UXUI"
           onClick={this.props.isUXUI ? null : this.props.menuPressed}
         >
           UX &amp; UI
         </div>
+        <div
+          className={this.props.isArt ? "inactive" : "active"}
+          menu-title="Art"
+          onClick={this.props.isArt ? null : this.props.menuPressed}
+        >
+          Art
+        </div>
+
       </div>
     );
   }
