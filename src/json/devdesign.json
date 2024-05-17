@@ -1,6 +1,15 @@
 {
   "devdesign": [
     {
+      "name" : "Rage Click",
+      "vimeo-id" : 947270498,
+      "client-name" : "Fullstory",
+      "client-link" : "https://www.fullstory.com/",
+      "role" : "Writing & Concept Design",
+      "description" : "An amusing, web-based game to show off Fullstory's capabilities to analyze, understand and predict user behavior, while educating players about \"dark web patterns\" (deceptive practices designed to confuse and trick users).",
+      "link" : "https://www.rage-click.com/"
+    },
+    {
       "name" : "PuppySpot",
       "vimeo-id" : 393172063,
       "client-name" : "Puppy Spot",
