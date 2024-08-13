@@ -1,16 +1,11 @@
 import React, { Component } from "react";
-import ScrollAnimation from "react-animate-on-scroll";
 
 const folder = "uxui";
 
 class UXUIContainer extends Component {
   render() {
     return (
-      <ScrollAnimation
-        animateIn={"fadeIn"}
-        animateOnce={true}
-        className="project-container"
-      >
+      <div className="project-container">
         <div
           onClick={() =>
             this.props.slideShowClicked(
@@ -29,7 +24,7 @@ class UXUIContainer extends Component {
 
           <p>{this.props.briefDescription}</p>
         </div>
-      </ScrollAnimation>
+      </div>
     );
   }
 }

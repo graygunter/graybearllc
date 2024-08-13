@@ -98,6 +98,9 @@ class Projects extends Component {
     let slideNames = this.state.slideNames;
 
     for (let i = 0; i < slideNames.length; i++) {
+
+      console.log("Generate slide " + i);
+
       let newSlide = (
         <ProjectSlide
           img={slideNames[i]}
@@ -163,6 +166,7 @@ class Projects extends Component {
       let uxuiBriefDescription = projectsDataArray[i]["briefDescription"];
       let uxuiLongDescription = projectsDataArray[i]["longDescription"];
       let uxuiName = projectsDataArray[i]["name"];
+      let subName = projectsDataArray[i]["subname"];
       let projectSlides = projectsDataArray[i]["slides"];
       let uxuiThumbnail = projectsDataArray[i]["thumbnail"];
 
@@ -176,6 +180,8 @@ class Projects extends Component {
           name={uxuiName}
           slides={projectSlides}
           slideShowClicked={this.slideShowClicked}
+          subname={subName}
+
           thumbnail={uxuiThumbnail}
         />
       );
@@ -208,7 +214,7 @@ class Projects extends Component {
 
   render() {
     return (
-      <div className="projects">
+      <div className={`projects ${this.props.isUXUI ? "uxui" : "art"}`}>
         {this.generateProjects()}
 
         <div className="slideshow-container">

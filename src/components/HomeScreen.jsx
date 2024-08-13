@@ -2,6 +2,7 @@ import React, { Component } from "react";
 
 import Menu from "./Menu";
 import Projects from "./Projects";
+import Logo from "../imgs/graybear_logo.svg";
 
 class HomeScreen extends Component {
   render() {
@@ -11,7 +12,7 @@ class HomeScreen extends Component {
           <img
             alt="Graybear LLC. Since 2011"
             className="logo"
-            src={require(`../imgs/graybear_logo.svg`)}
+            src={Logo}
           />
 
           <Menu

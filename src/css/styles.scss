@@ -81,10 +81,6 @@ body {
           cursor: pointer;
           font-weight: 700;
         }
-
-        &:last-child {
-          display: none;
-        }
       }
     }
 
@@ -131,10 +127,11 @@ body {
         h3 {
           color: #1a73e8;
           font-weight: 700;
-          margin-bottom: 15px;
+          line-height: 25px;
+          margin-bottom: 0;
 
-          &.devDesign {
-            margin-bottom: 5px;
+          &.subname {
+            font-weight: normal;
           }
         }
 
@@ -151,6 +148,7 @@ body {
         }
 
         img {
+          margin-top: 15px;
           width: 100%;
         }
       }
@@ -203,16 +201,36 @@ body {
               .slide {
               
                 .legend {
+                  background: #000;
                   bottom: 3%;
                   font-size: 2em;
+                  left: 0;
+                  line-height: 1.5em;
+                  margin: 0 auto;
                   opacity: 1;
+                  position: relative;
+                  width: 90%;
                 }
-
+            
               }
             }
 
           }
           
+        }
+      }
+
+      &.art {
+        .slideshow-container {
+          .carouselWrapper {
+            .carousel-root {
+              .carousel {
+                svg {
+                  color: #FFF;
+                }
+              }
+            }
+          }
         }
       }
     }
@@ -264,8 +282,9 @@ body {
   }
 
   .footer {
+    background: #000;
     font-size: 1rem;
-    padding: 5% 0;
+    padding: 1% 0;
     text-align: center;
   }
 }

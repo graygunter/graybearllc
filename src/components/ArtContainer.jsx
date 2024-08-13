@@ -1,14 +1,9 @@
 import React, { Component } from "react";
-import ScrollAnimation from "react-animate-on-scroll";
 
 class ArtContainer extends Component {
   render() {
     return (
-      <ScrollAnimation
-        animateIn={"fadeIn"}
-        animateOnce={true}
-        className="project-container"
-      >
+      <div className="project-container">
         <div
           onClick={() =>
             this.props.slideShowClicked(
@@ -17,8 +12,8 @@ class ArtContainer extends Component {
             )
           }
         >
-          <h3>{this.props.name}</h3>
-
+            <h3>{this.props.name}</h3>
+            <h3 className="subname">{this.props.subname}</h3>
           <img
             alt={this.props.altText}
             className={"thumbnail"}
@@ -27,7 +22,7 @@ class ArtContainer extends Component {
 
           <p>{this.props.briefDescription}</p>
         </div>
-      </ScrollAnimation>
+      </div>
     );
   }
 }

@@ -1,14 +1,9 @@
 import React, { Component } from "react";
-import ScrollAnimation from "react-animate-on-scroll";
 
 class DevDesignContainer extends Component {
   render() {
     return (
-      <ScrollAnimation
-        animateIn={"fadeIn"}
-        animateOnce={true}
-        className="project-container"
-      >
+      <div className="project-container">
         <h3 className="devDesign">
           {this.props.projectLink ? (
             <a
@@ -86,7 +81,7 @@ class DevDesignContainer extends Component {
         ) : null}
 
         <p>{this.props.description}</p>
-      </ScrollAnimation>
+      </div>
     );
   }
 }
